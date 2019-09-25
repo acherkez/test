@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: test.java.IAmTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.278 s <<< FAILURE! - in test.java.IAmTest
+test1(test.java.IAmTest)  Time elapsed: 9.735 s  <<< FAILURE!
+java.lang.AssertionError: Error message wrong did not expect to find [true] but found [false]
+	at test.java.IAmTest.checkErrorText(IAmTest.java:75)
+	at test.java.IAmTest.test1(IAmTest.java:62)
+

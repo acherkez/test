@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
+<suite name="First test" parallel="classes" thread-count="3">
+
+    <test name="Testing">
+        <classes>
+            <class name="test.java.IAmTest"/>
+<!--            <class name="test.java.IAmTest"/>-->
+        </classes>
+    </test>
+</suite>
