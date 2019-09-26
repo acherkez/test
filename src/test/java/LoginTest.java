@@ -3,11 +3,9 @@ package test.java;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,10 +22,10 @@ public class LoginTest {
     @Test(dataProvider = "provider")
     public void test1(String name, String lastName, String mail, String password,
                       String error1, String error2, String error3, String error4) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "resourses/chromedriver.exe");
-//        System.setProperty("webdriver.gecko.driver", "D:\\driver\\1\\geckodriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "resourses/chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();
-//        WebDriver driver = new FirefoxDriver();
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
@@ -65,13 +63,11 @@ public class LoginTest {
         checkErrorText(error4, error44);
 
 
-
-
         driver.close();
     }
 
     @Step
-    public void checkErrorText(String actual, String expected){
+    public void checkErrorText(String actual, String expected) {
         Assert.assertTrue(expected.equals(actual), "Error message wrong");
     }
 }
