@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
-public class IAmTest {
+public class LoginTest {
     @DataProvider(name = "provider")
     public Object[][] provider() {
         return new Object[][]{

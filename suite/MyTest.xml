@@ -4,8 +4,7 @@
 
     <test name="Testing">
         <classes>
-            <class name="test.java.IAmTest"/>
-<!--            <class name="test.java.IAmTest"/>-->
+            <class name="test.java.LoginTest"/>
         </classes>
     </test>
 </suite>
